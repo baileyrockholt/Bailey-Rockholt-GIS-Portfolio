@@ -19,14 +19,14 @@
     </nav>
 
     <section class="hero-content">
-      <p class="eyebrow">Environmental GIS • Wildfire • Land Cover • Habitat Mapping</p>
+      <p class="eyebrow">Environmental GIS • Wildfire • Habitat • Terrain • Land Cover</p>
       <h1>Bailey Rockholt</h1>
       <h2>Environmental GIS Portfolio</h2>
       <p class="intro">
-        I use GIS to understand landscapes, environmental risk, terrain, habitat patterns, and human access.
-        My work focuses on practical spatial analysis using ArcGIS Pro, ArcGIS Online, raster data, vector data,
-        and clear map communication.
+        I use GIS, environmental data, and spatial analysis to understand wildfire patterns,
+        land cover, habitat conditions, terrain, and natural resource systems.
       </p>
+
       <div class="hero-buttons">
         <a class="button primary" href="#projects">View Projects</a>
         <a class="button secondary" href="#contact">Contact Me</a>
@@ -40,11 +40,13 @@
 
   <main>
     <section class="section about">
-      <h2>About</h2>
+      <p class="eyebrow">About</p>
+      <h2>Environmental GIS + Spatial Analysis</h2>
       <p>
-        I am building a GIS career focused on environmental mapping, natural resource work, wildfire analysis,
-        land cover interpretation, trails, terrain, and public-sector GIS. My background in coaching, education,
-        and business gives me experience leading people, explaining technical information, and working with responsibility.
+        I am building a GIS career focused on environmental mapping, wildfire analysis,
+        habitat interpretation, land cover, trails, terrain, and public-sector GIS.
+        My background in coaching, education, and business gives me experience leading people,
+        explaining technical information, and turning complex work into clear communication.
       </p>
     </section>
 
@@ -54,14 +56,77 @@
         <h2>Projects</h2>
       </div>
 
+      <article class="project-card featured-card">
+        <div class="project-text">
+          <p class="tag">ArcGIS Online • R • Environmental GIS</p>
+          <h3>California Wildfire Spatial Analysis — 2013–2019</h3>
+          <p>
+            This interactive GIS project analyzes California wildfire patterns from 2013–2019.
+            Wildfire incident data was processed in R, summarized by county, and joined to
+            California county boundaries in ArcGIS Online to visualize wildfire frequency,
+            total acres burned, and county-level wildfire severity.
+          </p>
+
+          <h4>Workflow</h4>
+          <ul>
+            <li>Cleaned and summarized California wildfire incident data using R.</li>
+            <li>Created county-level statistics for fire frequency, acres burned, average burn size, and fatalities.</li>
+            <li>Joined wildfire summary data to California county polygons in ArcGIS Online.</li>
+            <li>Built interactive choropleth maps with county-level pop-ups and wildfire severity styling.</li>
+          </ul>
+
+          <h4>What this shows</h4>
+          <p>
+            The project highlights spatial patterns in wildfire frequency and burn severity across California,
+            showing how GIS and statistical analysis can support environmental hazard interpretation.
+          </p>
+
+          <a class="button primary" href="https://arcg.is/1vK0ru3" target="_blank">
+            Open Full Interactive Map
+          </a>
+        </div>
+
+        <div class="map-embed">
+          <iframe
+            src="https://www.arcgis.com/apps/Embed/index.html?webmap=9f0e311728474400ae384e9b4a210f7d&extent=-125.7,31.1,-113.3,42.4&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light"
+            width="100%"
+            height="560"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="project-gallery">
+          <figure>
+            <img src="wildfire_year_chart.png" alt="California wildfires by year chart" />
+            <figcaption>Wildfire incidents by year from the R analysis.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="wildfire_month_chart.png" alt="California wildfires by month chart" />
+            <figcaption>Seasonal wildfire occurrence by month.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="wildfire_county_frequency_chart.png" alt="Top California counties by wildfire frequency chart" />
+            <figcaption>Top counties by wildfire frequency.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="wildfire_acres_burned_chart.png" alt="Top California counties by acres burned chart" />
+            <figcaption>Top counties by total acres burned.</figcaption>
+          </figure>
+        </div>
+      </article>
+
       <article class="project-card">
         <div class="project-text">
           <p class="tag">ArcGIS Pro • Environmental GIS</p>
           <h3>Wildfire Risk and Land Cover Analysis — Lake Tahoe Region</h3>
           <p>
-            This project combines wildfire perimeter data, NLCD land cover, elevation, OpenStreetMap roads,
-            and water features to visualize how wildfire activity relates to vegetation, terrain, and human
-            infrastructure around Lake Tahoe.
+            This project combines wildfire perimeter data, NLCD land cover, elevation,
+            OpenStreetMap roads, and water features to visualize how wildfire activity relates
+            to vegetation, terrain, and human infrastructure around Lake Tahoe.
           </p>
 
           <h4>Workflow</h4>
@@ -71,18 +136,12 @@
             <li>Symbolized wildfire, water, roads, land cover, and elevation for readability.</li>
             <li>Built a final cartographic layout with scale bar and north arrow.</li>
           </ul>
-
-          <h4>What this shows</h4>
-          <p>
-            The map highlights how wildfire perimeters overlap with forested and mountainous areas, while roads
-            and development are concentrated around the lake and other accessible corridors.
-          </p>
         </div>
 
-        <div class="project-gallery">
+        <div class="project-gallery two-image">
           <figure>
             <img src="tahoe-final-map.png" alt="Final Lake Tahoe wildfire and land cover GIS map" />
-            <figcaption>Final Lake Tahoe land cover, wildfire, water, roads, and elevation map.</figcaption>
+            <figcaption>Final Lake Tahoe wildfire, land cover, roads, water, and elevation map.</figcaption>
           </figure>
 
           <figure>
@@ -97,9 +156,9 @@
           <p class="tag">ArcGIS Online • Climate & Habitat Mapping</p>
           <h3>Clarkia Population Climate Suitability Mapping</h3>
           <p>
-            This ArcGIS Online project maps Clarkia population sites across California and compares annual
-            precipitation, elevation, and temperature variables to evaluate ecological patterns tied to plant
-            distribution.
+            This ArcGIS Online project maps Clarkia population sites across California and compares
+            annual precipitation, elevation, and temperature variables to evaluate ecological patterns
+            tied to plant distribution.
           </p>
 
           <h4>Workflow</h4>
@@ -109,15 +168,9 @@
             <li>Used symbology to visualize precipitation differences across sites.</li>
             <li>Created a web GIS visualization focused on plant-environment relationships.</li>
           </ul>
-
-          <h4>What this shows</h4>
-          <p>
-            The project shows how environmental variables can be mapped together to support habitat interpretation,
-            plant distribution research, and ecological GIS workflows.
-          </p>
         </div>
 
-        <div class="project-gallery">
+        <div class="project-gallery two-image">
           <figure>
             <img src="clarkia-final-map.png" alt="Clarkia final climate map" />
             <figcaption>Final Clarkia population climate visualization.</figcaption>
@@ -142,25 +195,26 @@
         <span>ArcGIS Online</span>
         <span>Map Viewer</span>
         <span>Experience Builder</span>
+        <span>R</span>
+        <span>Spatial Joins</span>
         <span>Raster Data</span>
         <span>Vector Data</span>
         <span>Cartographic Design</span>
-        <span>Spatial Data Preparation</span>
         <span>Environmental Mapping</span>
         <span>Land Cover Analysis</span>
         <span>Wildfire Mapping</span>
         <span>Habitat Mapping</span>
         <span>Terrain Interpretation</span>
         <span>Climate Data Visualization</span>
-        <span>Public GIS Data Acquisition</span>
       </div>
     </section>
 
     <section id="contact" class="section contact">
-      <h2>Contact</h2>
+      <p class="eyebrow">Contact</p>
+      <h2>Let’s Connect</h2>
       <p>Email: <a href="mailto:baileyrockholt@gmail.com">baileyrockholt@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/baileyrockholt">linkedin.com/in/baileyrockholt</a></p>
-      <p>GitHub Portfolio: <a href="https://baileyrockholt.github.io/Bailey-Rockholt-GIS-Portfolio/">View Live Site</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/baileyrockholt" target="_blank">linkedin.com/in/baileyrockholt</a></p>
+      <p>GitHub Portfolio: <a href="https://baileyrockholt.github.io/Bailey-Rockholt-GIS-Portfolio/" target="_blank">View Live Site</a></p>
     </section>
   </main>
 
