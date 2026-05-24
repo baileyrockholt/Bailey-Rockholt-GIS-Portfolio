@@ -8,222 +8,309 @@
 </head>
 
 <body>
-  <header class="hero">
-    <nav>
-      <div class="logo">Bailey Rockholt</div>
-      <div class="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+
+<header class="hero">
+
+  <nav>
+    <div class="logo">Bailey Rockholt</div>
+
+    <div class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero-content">
+
+    <p class="eyebrow">
+      Environmental GIS • Wildfire Analysis • Recreation Mapping • Spatial Storytelling
+    </p>
+
+    <h1>Bailey Rockholt</h1>
+
+    <h2>Environmental GIS & Outdoor Spatial Analysis</h2>
+
+    <p class="intro">
+      I build GIS projects focused on wildfire risk, environmental systems,
+      habitat patterns, terrain interpretation, recreation access,
+      and spatial storytelling using ArcGIS Pro, ArcGIS Online, R,
+      raster analysis, and interactive web GIS tools.
+    </p>
+
+    <div class="hero-buttons">
+      <a class="button primary" href="#projects">View Projects</a>
+      <a class="button secondary" href="#contact">Contact Me</a>
+    </div>
+
+  </section>
+
+</header>
+
+<main>
+
+<section class="section about">
+
+  <p class="eyebrow">About</p>
+
+  <h2>Environmental GIS with an outdoor-focused perspective.</h2>
+
+  <p>
+    My GIS work focuses on environmental analysis, wildfire resilience,
+    conservation, terrain, recreation systems, and public-facing spatial communication.
+    I am especially interested in how GIS can help better understand
+    landscapes and human-environment relationships.
+  </p>
+
+</section>
+
+<section id="projects" class="section">
+
+  <div class="section-heading">
+    <p class="eyebrow">Featured GIS Work</p>
+    <h2>Environmental GIS Projects</h2>
+  </div>
+
+  <div class="project-preview-grid">
+
+    <div class="preview-card">
+      <img src="tahoe-final-map.png" alt="Lake Tahoe wildfire map">
+
+      <div class="preview-content">
+        <p class="tag">ArcGIS Pro</p>
+
+        <h3>Lake Tahoe Wildfire & Land Cover Analysis</h3>
+
+        <p>
+          Wildfire, terrain, land cover, roads, and environmental
+          spatial analysis focused on the Tahoe region.
+        </p>
       </div>
-    </nav>
+    </div>
 
-    <section class="hero-content">
-      <p class="eyebrow">Environmental GIS • Wildfire Analysis • Recreation Mapping • Spatial Storytelling</p>
-      <h1>Bailey Rockholt</h1>
-      <h2>Environmental GIS & Outdoor Spatial Analysis</h2>
-      <p class="intro">
-        I build GIS projects focused on wildfire risk, land cover analysis, outdoor recreation,
-        habitat patterns, terrain interpretation, and environmental systems. My work combines
-        ArcGIS Pro, ArcGIS Online, R, raster analysis, vector data, and interactive web mapping.
-      </p>
+    <div class="preview-card">
+      <img src="clarkia-final-map.png" alt="Clarkia habitat map">
 
-      <div class="hero-buttons">
-        <a class="button primary" href="#projects">View Projects</a>
-        <a class="button secondary" href="#contact">Contact Me</a>
+      <div class="preview-content">
+        <p class="tag">ArcGIS Online</p>
+
+        <h3>Clarkia Habitat & Climate Mapping</h3>
+
+        <p>
+          Environmental GIS project visualizing plant populations,
+          precipitation, and climate relationships across California.
+        </p>
       </div>
-    </section>
-  </header>
+    </div>
 
-  <main>
-    <section class="section about">
-      <p class="eyebrow">About</p>
-      <h2>Environmental GIS with an outdoor-focused perspective.</h2>
+  </div>
+
+  <article class="project-card featured-card">
+
+    <div class="project-text">
+
+      <p class="tag">Featured Interactive GIS Project</p>
+
+      <h3>California Recreation & Conservation Web GIS</h3>
+
       <p>
-        My GIS work sits at the intersection of environmental analysis, outdoor recreation,
-        wildfire resilience, conservation, and spatial communication. I am interested in using
-        GIS to understand how people interact with landscapes and how data can support better
-        environmental and planning decisions.
+        Interactive ArcGIS Online project exploring recreation access,
+        environmental systems, wildfire patterns, terrain, and landscape
+        relationships using hosted GIS layers and web mapping tools.
       </p>
-    </section>
 
-    <section id="projects" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Featured GIS Work</p>
-        <h2>Projects</h2>
-      </div>
+      <h4>What this project demonstrates</h4>
 
-      <article class="project-card featured-card">
-        <div class="project-text">
-          <p class="tag">ArcGIS Online • R • Wildfire GIS</p>
-          <h3>California Wildfire Spatial Analysis — 2013–2019</h3>
-          <p>
-            This interactive GIS project analyzes California wildfire patterns from 2013–2019.
-            Wildfire incident data was processed in R, summarized by county, and joined to
-            California county boundaries in ArcGIS Online to visualize wildfire frequency,
-            acres burned, and county-level wildfire severity.
-          </p>
+      <ul>
+        <li>Interactive web GIS communication</li>
+        <li>Environmental and recreation-focused spatial analysis</li>
+        <li>ArcGIS Online map design and hosted layers</li>
+        <li>Public-facing GIS product development</li>
+      </ul>
 
-          <h4>Workflow</h4>
-          <ul>
-            <li>Cleaned and summarized wildfire incident data using R.</li>
-            <li>Created county-level fire frequency, acres burned, and severity metrics.</li>
-            <li>Joined wildfire statistics to California county polygons in ArcGIS Online.</li>
-            <li>Built interactive choropleth maps with pop-ups and visual classification.</li>
-          </ul>
+      <a class="button primary"
+         href="https://cuesta.maps.arcgis.com/apps/mapviewer/index.html?webmap=8f87df10fd2b419f9c45ee53890ff7ae"
+         target="_blank">
 
-          <a class="button primary" href="https://arcg.is/1vK0ru3" target="_blank">
-            Open Interactive Map
-          </a>
-        </div>
+         Open Interactive Map
 
-        <div class="project-gallery">
-          <figure>
-            <img src="wildfire_year_chart.png" alt="California wildfires by year chart" />
-            <figcaption>Wildfire incidents by year.</figcaption>
-          </figure>
-          <figure>
-            <img src="wildfire_month_chart.png" alt="California wildfires by month chart" />
-            <figcaption>Seasonal wildfire occurrence by month.</figcaption>
-          </figure>
-          <figure>
-            <img src="wildfire_county_frequency_chart.png" alt="Top California counties by wildfire frequency chart" />
-            <figcaption>Top counties by wildfire frequency.</figcaption>
-          </figure>
-          <figure>
-            <img src="wildfire_acres_burned_chart.png" alt="Top California counties by acres burned chart" />
-            <figcaption>Top counties by total acres burned.</figcaption>
-          </figure>
-        </div>
-      </article>
+      </a>
 
-      <article class="project-card">
-        <div class="project-text">
-          <p class="tag">ArcGIS Online • Interactive Web GIS</p>
-          <h3>California Recreation & Conservation Web Map</h3>
-          <p>
-            This interactive ArcGIS Online project explores recreation access, environmental
-            features, terrain, and conservation-oriented spatial relationships. It demonstrates
-            web mapping, hosted GIS layers, cartographic design, and interactive spatial
-            visualization.
-          </p>
+    </div>
 
-          <h4>Skills Shown</h4>
-          <ul>
-            <li>ArcGIS Online web map design.</li>
-            <li>Layer organization and interactive map communication.</li>
-            <li>Environmental and recreation-focused spatial visualization.</li>
-            <li>Public-facing GIS product development.</li>
-          </ul>
+    <div class="map-embed">
 
-          <a class="button primary"
-             href="https://cuesta.maps.arcgis.com/apps/mapviewer/index.html?webmap=8f87df10fd2b419f9c45ee53890ff7ae"
-             target="_blank">
-            Open Interactive Web Map
-          </a>
-        </div>
-      </article>
+      <iframe
+      src="https://www.arcgis.com/apps/Embed/index.html?webmap=8f87df10fd2b419f9c45ee53890ff7ae&extent=-124.4,32.2,-114.0,42.2&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=dark"
+      width="100%"
+      height="600"
+      frameborder="0"
+      allowfullscreen>
+      </iframe>
 
-      <article class="project-card">
-        <div class="project-text">
-          <p class="tag">ArcGIS Pro • Environmental GIS</p>
-          <h3>Wildfire Risk and Land Cover Analysis — Lake Tahoe Region</h3>
-          <p>
-            This project combines wildfire perimeter data, NLCD land cover, elevation,
-            OpenStreetMap roads, and water features to visualize how wildfire activity relates
-            to vegetation, terrain, and human infrastructure around Lake Tahoe.
-          </p>
+    </div>
 
-          <h4>Workflow</h4>
-          <ul>
-            <li>Acquired raster and vector datasets from public GIS sources.</li>
-            <li>Prepared layers in ArcGIS Pro and organized them by map purpose.</li>
-            <li>Symbolized wildfire, water, roads, land cover, and elevation for readability.</li>
-            <li>Built a final cartographic layout with scale bar and north arrow.</li>
-          </ul>
-        </div>
+  </article>
 
-        <div class="project-gallery two-image">
-          <figure>
-            <img src="tahoe-final-map.png" alt="Lake Tahoe wildfire and land cover GIS map" />
-            <figcaption>Final Lake Tahoe wildfire, land cover, roads, water, and elevation map.</figcaption>
-          </figure>
-          <figure>
-            <img src="tahoe-workflow.png" alt="ArcGIS Pro Tahoe workflow screenshot" />
-            <figcaption>ArcGIS Pro workflow showing layer organization and symbology setup.</figcaption>
-          </figure>
-        </div>
-      </article>
+  <article class="project-card">
 
-      <article class="project-card">
-        <div class="project-text">
-          <p class="tag">ArcGIS Online • Climate & Habitat Mapping</p>
-          <h3>Clarkia Population Climate Suitability Mapping</h3>
-          <p>
-            This ArcGIS Online project maps Clarkia population sites across California and
-            compares precipitation, elevation, and temperature variables to evaluate ecological
-            patterns tied to plant distribution.
-          </p>
+    <div class="project-text">
 
-          <h4>Workflow</h4>
-          <ul>
-            <li>Mapped Clarkia population locations in ArcGIS Online.</li>
-            <li>Displayed climate and elevation values using labeled point data.</li>
-            <li>Used symbology to visualize precipitation differences across sites.</li>
-            <li>Created a web GIS visualization focused on plant-environment relationships.</li>
-          </ul>
-        </div>
+      <p class="tag">ArcGIS Pro • Environmental GIS</p>
 
-        <div class="project-gallery two-image">
-          <figure>
-            <img src="clarkia-final-map.png" alt="Clarkia final climate map" />
-            <figcaption>Final Clarkia population climate visualization.</figcaption>
-          </figure>
-          <figure>
-            <img src="clarkia-workflow.png" alt="Clarkia ArcGIS Online workflow screenshot" />
-            <figcaption>ArcGIS Online legend and symbology workflow.</figcaption>
-          </figure>
-        </div>
-      </article>
-    </section>
+      <h3>Wildfire Risk & Land Cover Analysis — Lake Tahoe</h3>
 
-    <section id="skills" class="section skills">
-      <div class="section-heading">
-        <p class="eyebrow">Technical Toolkit</p>
-        <h2>GIS Skills</h2>
-      </div>
+      <p>
+        This ArcGIS Pro project combines wildfire perimeter data,
+        NLCD land cover, elevation, roads, and water features to visualize
+        relationships between wildfire activity, terrain, and human infrastructure.
+      </p>
 
-      <div class="skill-grid">
-        <span>ArcGIS Pro</span>
-        <span>ArcGIS Online</span>
-        <span>Map Viewer</span>
-        <span>Experience Builder</span>
-        <span>R</span>
-        <span>Spatial Joins</span>
-        <span>Raster Data</span>
-        <span>Vector Data</span>
-        <span>Cartographic Design</span>
-        <span>Environmental Mapping</span>
-        <span>Wildfire Mapping</span>
-        <span>Habitat Mapping</span>
-        <span>Land Cover Analysis</span>
-        <span>Terrain Interpretation</span>
-        <span>Climate Data Visualization</span>
-        <span>Interactive Web Mapping</span>
-      </div>
-    </section>
+      <h4>Workflow</h4>
 
-    <section id="contact" class="section contact">
-      <p class="eyebrow">Contact</p>
-      <h2>Let’s Connect</h2>
-      <p>Email: <a href="mailto:baileyrockholt@gmail.com">baileyrockholt@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/baileyrockholt" target="_blank">linkedin.com/in/baileyrockholt</a></p>
-      <p>GitHub Portfolio: <a href="https://baileyrockholt.github.io/Bailey-Rockholt-GIS-Portfolio/" target="_blank">View Live Site</a></p>
-    </section>
-  </main>
+      <ul>
+        <li>Acquired raster and vector datasets from public GIS sources</li>
+        <li>Prepared layers in ArcGIS Pro and organized symbology</li>
+        <li>Combined wildfire, terrain, roads, and land cover data</li>
+        <li>Produced final cartographic layout with scale bar and north arrow</li>
+      </ul>
 
-  <footer>
-    <p>© 2026 Bailey Rockholt | Environmental GIS Portfolio</p>
-  </footer>
+    </div>
+
+    <div class="project-gallery two-image">
+
+      <figure>
+        <img src="tahoe-final-map.png" alt="Tahoe wildfire map">
+
+        <figcaption>
+          Final Tahoe wildfire and land cover visualization.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="tahoe-workflow.png" alt="Tahoe workflow">
+
+        <figcaption>
+          ArcGIS Pro workflow and symbology setup.
+        </figcaption>
+      </figure>
+
+    </div>
+
+  </article>
+
+  <article class="project-card">
+
+    <div class="project-text">
+
+      <p class="tag">ArcGIS Online • Habitat Mapping</p>
+
+      <h3>Clarkia Population Climate Suitability Mapping</h3>
+
+      <p>
+        ArcGIS Online project mapping Clarkia population sites
+        and comparing precipitation, elevation, and climate variables
+        tied to ecological distribution patterns.
+      </p>
+
+      <h4>Workflow</h4>
+
+      <ul>
+        <li>Mapped Clarkia population locations in ArcGIS Online</li>
+        <li>Displayed climate and elevation values using labeled point data</li>
+        <li>Visualized precipitation differences using environmental symbology</li>
+        <li>Created web GIS visualization for ecological interpretation</li>
+      </ul>
+
+    </div>
+
+    <div class="project-gallery two-image">
+
+      <figure>
+        <img src="clarkia-final-map.png" alt="Clarkia map">
+
+        <figcaption>
+          Final Clarkia climate suitability visualization.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="clarkia-workflow.png" alt="Clarkia workflow">
+
+        <figcaption>
+          ArcGIS Online workflow and environmental symbology.
+        </figcaption>
+      </figure>
+
+    </div>
+
+  </article>
+
+</section>
+
+<section id="skills" class="section skills">
+
+  <div class="section-heading">
+    <p class="eyebrow">Technical Toolkit</p>
+    <h2>GIS Skills</h2>
+  </div>
+
+  <div class="skill-grid">
+
+    <span>ArcGIS Pro</span>
+    <span>ArcGIS Online</span>
+    <span>Map Viewer</span>
+    <span>Experience Builder</span>
+    <span>Raster Data</span>
+    <span>Vector Data</span>
+    <span>R</span>
+    <span>Cartographic Design</span>
+    <span>Wildfire Mapping</span>
+    <span>Habitat Mapping</span>
+    <span>Environmental Mapping</span>
+    <span>Spatial Analysis</span>
+    <span>Land Cover Analysis</span>
+    <span>Interactive Web GIS</span>
+    <span>Terrain Interpretation</span>
+
+  </div>
+
+</section>
+
+<section id="contact" class="section contact">
+
+  <p class="eyebrow">Contact</p>
+
+  <h2>Let’s Connect</h2>
+
+  <p>
+    Email:
+    <a href="mailto:baileyrockholt@gmail.com">
+      baileyrockholt@gmail.com
+    </a>
+  </p>
+
+  <p>
+    LinkedIn:
+    <a href="https://linkedin.com/in/baileyrockholt" target="_blank">
+      linkedin.com/in/baileyrockholt
+    </a>
+  </p>
+
+  <p>
+    Portfolio:
+    <a href="https://baileyrockholt.github.io/Bailey-Rockholt-GIS-Portfolio/" target="_blank">
+      View Live Site
+    </a>
+  </p>
+
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Bailey Rockholt | Environmental GIS Portfolio</p>
+</footer>
+
 </body>
 </html>
