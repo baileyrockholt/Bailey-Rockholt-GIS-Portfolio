@@ -1,34 +1,31 @@
 :root {
-  --forest: #263f2f;
-  --deep-forest: #17251d;
-  --wood: #8b5e3c;
-  --tan: #efe6d5;
-  --cream: #faf7ef;
-  --clay: #b9472f;
-  --sage: #d9e2cf;
-  --text: #1f2a24;
-  --muted: #5c665d;
-  --card: #ffffff;
-  --shadow: 0 14px 38px rgba(35, 25, 15, 0.14);
+  --forest: #1f3a2d;
+  --deep-forest: #13231b;
+  --wood: #8c6544;
+  --sand: #efe5d2;
+  --cream: #f7f5ef;
+  --clay: #bb5939;
+  --sage: #dbe4d4;
+  --text: #1d2620;
+  --muted: #5e685f;
+  --card: rgba(255,255,255,0.9);
+  --shadow: 0 18px 45px rgba(20,20,20,0.12);
 }
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
-  background:
-    linear-gradient(rgba(250, 247, 239, 0.94), rgba(250, 247, 239, 0.94)),
-    repeating-linear-gradient(
-      90deg,
-      #8b5e3c 0px,
-      #8b5e3c 2px,
-      #a87952 4px,
-      #c49a6c 8px
-    );
+  font-family: Inter, Arial, sans-serif;
+  background: var(--cream);
   color: var(--text);
+  overflow-x: hidden;
 }
 
 a {
@@ -36,14 +33,18 @@ a {
 }
 
 .hero {
-  min-height: 82vh;
+  min-height: 92vh;
   background:
-    linear-gradient(rgba(23, 37, 29, 0.82), rgba(23, 37, 29, 0.7)),
+    linear-gradient(rgba(10,20,15,0.55),
+    rgba(10,20,15,0.72)),
     url("hero-outdoors.jpeg");
+
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 26px 7%;
+  padding: 32px 8%;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
@@ -53,69 +54,70 @@ nav {
 }
 
 .logo {
+  font-size: 1.2rem;
   font-weight: 800;
-  font-size: 1.1rem;
   letter-spacing: 0.5px;
 }
 
 .nav-links {
   display: flex;
-  gap: 24px;
+  gap: 26px;
 }
 
 .nav-links a {
-  color: white;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   opacity: 0.9;
+  transition: 0.2s ease;
 }
 
 .nav-links a:hover {
   opacity: 1;
+  transform: translateY(-1px);
 }
 
 .hero-content {
-  max-width: 850px;
-  margin-top: 120px;
+  max-width: 900px;
+  margin-top: auto;
+  margin-bottom: 110px;
 }
 
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: var(--clay);
-  font-size: 0.78rem;
-  font-weight: 900;
-  margin-bottom: 12px;
-}
-
-.hero .eyebrow {
-  color: #f1b389;
+  color: #f0bc98;
+  font-size: 0.82rem;
+  font-weight: 800;
+  margin-bottom: 14px;
 }
 
 h1 {
-  font-size: clamp(3.5rem, 8vw, 7rem);
-  line-height: 0.95;
+  font-size: clamp(4rem, 9vw, 8rem);
+  line-height: 0.92;
   margin: 0;
+  font-weight: 900;
 }
 
 .hero h2 {
-  font-size: clamp(1.6rem, 3vw, 2.7rem);
-  margin: 18px 0;
-  color: var(--tan);
+  font-size: clamp(1.5rem, 3vw, 2.7rem);
+  margin-top: 18px;
+  color: #f6eadf;
+  font-weight: 600;
 }
 
 .intro {
-  max-width: 780px;
-  font-size: 1.25rem;
-  line-height: 1.75;
-  color: rgba(255, 255, 255, 0.9);
+  max-width: 760px;
+  font-size: 1.22rem;
+  line-height: 1.8;
+  margin-top: 28px;
+  color: rgba(255,255,255,0.92);
 }
 
 .hero-buttons {
   display: flex;
-  gap: 14px;
+  gap: 16px;
   flex-wrap: wrap;
-  margin-top: 30px;
+  margin-top: 36px;
 }
 
 .button {
@@ -124,25 +126,22 @@ h1 {
   border-radius: 999px;
   text-decoration: none;
   font-weight: 800;
-  transition: 0.2s ease;
+  transition: 0.25s ease;
 }
 
 .button:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 .button.primary {
   background: var(--clay);
   color: white;
+  box-shadow: 0 10px 24px rgba(185,89,57,0.25);
 }
 
 .button.secondary {
-  border: 2px solid rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(255,255,255,0.7);
   color: white;
-}
-
-.hero-image-banner {
-  display: none;
 }
 
 main {
@@ -150,116 +149,117 @@ main {
 }
 
 .section {
-  width: min(1200px, 92%);
+  width: min(1250px, 92%);
   margin: 0 auto;
-  padding: 80px 0;
+  padding: 90px 0;
 }
 
 .about {
-  background: rgba(255, 255, 255, 0.72);
-  padding: 44px;
-  margin-top: -50px;
-  border-radius: 28px;
+  background: white;
+  padding: 58px;
+  border-radius: 34px;
   box-shadow: var(--shadow);
+  margin-top: -80px;
   position: relative;
+  z-index: 10;
 }
 
 .about h2,
 .section-heading h2,
 .contact h2 {
-  font-size: clamp(2.2rem, 5vw, 4rem);
-  margin: 0 0 22px 0;
+  font-size: clamp(2.3rem, 5vw, 4.2rem);
+  margin-bottom: 22px;
   color: var(--deep-forest);
 }
 
 .about p,
 .project-text p,
 .contact p {
-  font-size: 1.08rem;
-  line-height: 1.75;
   color: var(--muted);
+  line-height: 1.8;
+  font-size: 1.08rem;
 }
 
 .section-heading {
-  margin-bottom: 36px;
+  margin-bottom: 42px;
 }
 
 .project-card {
   background: var(--card);
-  border-radius: 28px;
+  border-radius: 34px;
   overflow: hidden;
   box-shadow: var(--shadow);
-  margin-bottom: 46px;
-  border: 1px solid rgba(139, 94, 60, 0.18);
+  margin-bottom: 54px;
+  border: 1px solid rgba(0,0,0,0.05);
+  backdrop-filter: blur(6px);
 }
 
 .featured-card {
-  border: 2px solid rgba(185, 71, 47, 0.28);
+  border: 2px solid rgba(187,89,57,0.22);
 }
 
 .project-text {
-  padding: 42px;
+  padding: 52px;
 }
 
 .tag {
   display: inline-block;
-  background: var(--tan);
+  background: var(--sand);
   color: var(--wood);
-  padding: 9px 14px;
+  padding: 10px 16px;
   border-radius: 999px;
-  font-weight: 900;
-  font-size: 0.82rem;
-  margin-bottom: 14px;
+  font-weight: 800;
+  font-size: 0.8rem;
+  margin-bottom: 18px;
 }
 
 .project-text h3 {
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  margin: 10px 0 18px 0;
   color: var(--deep-forest);
-  margin: 8px 0 18px 0;
 }
 
 .project-text h4 {
-  font-size: 1.2rem;
+  margin-top: 34px;
+  margin-bottom: 12px;
   color: var(--forest);
-  margin: 28px 0 10px 0;
+  font-size: 1.2rem;
 }
 
 .project-text ul {
-  color: var(--muted);
-  line-height: 1.7;
   padding-left: 22px;
+  color: var(--muted);
+  line-height: 1.8;
 }
 
 .map-embed {
-  padding: 0 42px 42px 42px;
+  padding: 0 52px 52px 52px;
 }
 
 .map-embed iframe {
-  width: 100%;
-  border-radius: 22px;
   border: none;
-  box-shadow: 0 12px 30px rgba(23, 37, 29, 0.18);
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: 0 14px 34px rgba(0,0,0,0.14);
 }
 
 .project-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 22px;
-  padding: 0 42px 42px 42px;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 24px;
+  padding: 0 52px 52px 52px;
 }
 
 .project-gallery.two-image {
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  padding-top: 0;
+  grid-template-columns: repeat(auto-fit, minmax(420px,1fr));
 }
 
 .project-gallery figure {
   margin: 0;
-  background: #fff;
-  border-radius: 20px;
+  border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(23, 37, 29, 0.12);
-  border: 1px solid rgba(139, 94, 60, 0.12);
+  background: white;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
 }
 
 .project-gallery img {
@@ -268,17 +268,16 @@ main {
 }
 
 .project-gallery figcaption {
-  padding: 14px 16px;
-  font-size: 0.95rem;
-  line-height: 1.5;
+  padding: 16px;
+  background: #fffdf8;
   color: var(--muted);
-  background: #fffaf1;
+  line-height: 1.6;
 }
 
 .skills {
-  background: rgba(255, 255, 255, 0.72);
-  border-radius: 28px;
-  padding: 52px;
+  background: white;
+  border-radius: 34px;
+  padding: 58px;
   box-shadow: var(--shadow);
 }
 
@@ -290,11 +289,10 @@ main {
 
 .skill-grid span {
   background: var(--sage);
-  color: var(--deep-forest);
   padding: 12px 18px;
   border-radius: 999px;
-  font-weight: 800;
-  border: 1px solid rgba(38, 63, 47, 0.12);
+  font-weight: 700;
+  color: var(--deep-forest);
 }
 
 .contact {
@@ -308,53 +306,49 @@ main {
 
 footer {
   background: var(--deep-forest);
-  color: var(--tan);
+  color: var(--sand);
   text-align: center;
-  padding: 28px;
+  padding: 32px;
+  margin-top: 80px;
 }
 
 @media (max-width: 850px) {
+
   nav {
     flex-direction: column;
     gap: 16px;
   }
 
   .nav-links {
-    gap: 14px;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .hero {
-    min-height: 72vh;
     padding: 24px;
+    min-height: 80vh;
   }
 
   .hero-content {
-    margin-top: 80px;
+    margin-bottom: 70px;
   }
 
   .about,
-  .project-text,
-  .skills {
-    padding: 26px;
+  .skills,
+  .project-text {
+    padding: 28px;
   }
 
-  .map-embed {
+  .map-embed,
+  .project-gallery {
     padding: 0 22px 28px 22px;
   }
 
-  .map-embed iframe {
-    height: 420px;
-  }
-
-  .project-gallery,
   .project-gallery.two-image {
     grid-template-columns: 1fr;
-    padding: 0 22px 28px 22px;
   }
 
   .section {
-    padding: 52px 0;
+    padding: 58px 0;
   }
 }
