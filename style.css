@@ -1,14 +1,12 @@
 :root {
   --forest: #1f3a2d;
   --deep-forest: #13231b;
-  --wood: #8c6544;
   --sand: #efe5d2;
   --cream: #f7f5ef;
   --clay: #bb5939;
   --sage: #dbe4d4;
   --text: #1d2620;
   --muted: #5e685f;
-  --card: rgba(255,255,255,0.92);
   --shadow: 0 18px 45px rgba(20,20,20,0.12);
 }
 
@@ -25,20 +23,15 @@ body {
   font-family: Inter, Arial, sans-serif;
   background: var(--cream);
   color: var(--text);
-  overflow-x: hidden;
 }
 
 .hero {
   min-height: 92vh;
-
   background:
-    linear-gradient(rgba(10,20,15,0.55),
-    rgba(10,20,15,0.72)),
+    linear-gradient(rgba(10,20,15,0.48), rgba(10,20,15,0.78)),
     url("hero-outdoors.jpeg");
-
   background-size: cover;
   background-position: center;
-
   color: white;
   padding: 32px 8%;
   display: flex;
@@ -62,10 +55,9 @@ nav {
 }
 
 .nav-links a {
-  text-decoration: none;
   color: white;
-  font-weight: 600;
-  opacity: 0.9;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .hero-content {
@@ -80,7 +72,6 @@ nav {
   color: #f0bc98;
   font-size: 0.82rem;
   font-weight: 800;
-  margin-bottom: 14px;
 }
 
 h1 {
@@ -100,20 +91,19 @@ h1 {
   max-width: 760px;
   font-size: 1.2rem;
   line-height: 1.8;
-  margin-top: 28px;
-  color: rgba(255,255,255,0.92);
+  color: rgba(255,255,255,0.94);
 }
 
 .hero-buttons {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  margin-top: 36px;
+  margin-top: 34px;
 }
 
 .button {
   display: inline-block;
-  padding: 14px 24px;
+  padding: 13px 22px;
   border-radius: 999px;
   text-decoration: none;
   font-weight: 800;
@@ -125,7 +115,7 @@ h1 {
 }
 
 .button.secondary {
-  border: 2px solid rgba(255,255,255,0.7);
+  border: 2px solid rgba(255,255,255,0.75);
   color: white;
 }
 
@@ -147,94 +137,120 @@ h1 {
 
 .about h2,
 .section-heading h2,
+.skills h2,
 .contact h2 {
   font-size: clamp(2.3rem, 5vw, 4.2rem);
-  margin-bottom: 22px;
   color: var(--deep-forest);
+  margin-bottom: 22px;
 }
 
 .about p,
-.project-text p,
+.project-body p,
+.wide-project p,
 .contact p {
   color: var(--muted);
   line-height: 1.8;
   font-size: 1.08rem;
 }
 
-.project-preview-grid {
+.project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
-  gap: 28px;
-  margin-bottom: 52px;
-}
-
-.preview-card {
-  background: white;
-  border-radius: 28px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-}
-
-.preview-card img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-}
-
-.preview-content {
-  padding: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 32px;
 }
 
 .project-card {
-  background: var(--card);
-  border-radius: 34px;
+  background: white;
+  border-radius: 30px;
   overflow: hidden;
   box-shadow: var(--shadow);
-  margin-bottom: 54px;
+  display: flex;
+  flex-direction: column;
 }
 
-.project-text {
-  padding: 52px;
+.project-card img,
+.placeholder-image {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.placeholder-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(135deg, rgba(31,58,45,0.9), rgba(187,89,57,0.78)),
+    url("hero-outdoors.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.project-body {
+  padding: 30px;
 }
 
 .tag {
   display: inline-block;
   background: var(--sand);
-  color: var(--wood);
-  padding: 10px 16px;
+  color: #8c6544;
+  padding: 9px 14px;
   border-radius: 999px;
   font-weight: 800;
-  font-size: 0.8rem;
-  margin-bottom: 18px;
+  font-size: 0.78rem;
 }
 
-.project-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-  gap: 24px;
-  padding: 0 52px 52px 52px;
+.project-body h3,
+.wide-project h3 {
+  font-size: 1.8rem;
+  color: var(--deep-forest);
+  margin-bottom: 14px;
 }
 
-.project-gallery.two-image {
-  grid-template-columns: repeat(auto-fit, minmax(420px,1fr));
+.project-body h4 {
+  margin-top: 24px;
+  color: var(--forest);
 }
 
-.project-gallery figure {
-  margin: 0;
-  border-radius: 24px;
-  overflow: hidden;
+.project-body ul {
+  color: var(--muted);
+  line-height: 1.7;
+  padding-left: 20px;
+}
+
+.wide-project {
   background: white;
-  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+  border-radius: 34px;
+  box-shadow: var(--shadow);
+  padding: 46px;
+  margin-top: 48px;
 }
 
-.project-gallery img {
+.workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.workflow-grid figure {
+  margin: 0;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #fffaf1;
+}
+
+.workflow-grid img {
   width: 100%;
   display: block;
 }
 
-.project-gallery figcaption {
-  padding: 16px;
-  background: #fffdf8;
+.workflow-grid figcaption {
+  padding: 14px;
   color: var(--muted);
 }
 
@@ -272,15 +288,30 @@ footer {
   color: var(--sand);
   text-align: center;
   padding: 32px;
-  margin-top: 80px;
 }
 
-.map-embed {
-  padding: 0 52px 52px 52px;
-}
+@media (max-width: 850px) {
+  nav {
+    flex-direction: column;
+    gap: 14px;
+  }
 
-.map-embed iframe {
-  border: none;
-  width: 100%;
-  border-radius: 24px;
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    min-height: 80vh;
+  }
+
+  .hero-content {
+    margin-bottom: 70px;
+  }
+
+  .about,
+  .skills,
+  .wide-project {
+    padding: 28px;
+  }
 }
