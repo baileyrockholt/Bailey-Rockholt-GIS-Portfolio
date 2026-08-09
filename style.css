@@ -107,6 +107,11 @@ h1 {
   border-radius: 999px;
   text-decoration: none;
   font-weight: 800;
+  transition: 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
 }
 
 .button.primary {
@@ -147,7 +152,8 @@ h1 {
 .about p,
 .project-body p,
 .wide-project p,
-.contact p {
+.contact p,
+.research-copy p {
   color: var(--muted);
   line-height: 1.8;
   font-size: 1.08rem;
@@ -188,6 +194,8 @@ h1 {
   font-size: 1.8rem;
   font-weight: 900;
   letter-spacing: 1px;
+  text-align: center;
+  padding: 24px;
 }
 
 .project-body {
@@ -205,18 +213,21 @@ h1 {
 }
 
 .project-body h3,
-.wide-project h3 {
+.wide-project h3,
+.research-copy h3 {
   font-size: 1.8rem;
   color: var(--deep-forest);
   margin-bottom: 14px;
 }
 
-.project-body h4 {
+.project-body h4,
+.research-copy h4 {
   margin-top: 24px;
   color: var(--forest);
 }
 
-.project-body ul {
+.project-body ul,
+.research-copy ul {
   color: var(--muted);
   line-height: 1.7;
   padding-left: 20px;
@@ -254,6 +265,70 @@ h1 {
   color: var(--muted);
 }
 
+/* FEATURED RESEARCH / THESIS SECTION */
+
+.research-section {
+  padding-top: 40px;
+}
+
+.research-hero {
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.98), rgba(238,244,235,0.98));
+  border-radius: 36px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: 0.9fr 1.4fr;
+  min-height: 600px;
+  border: 1px solid rgba(31,58,45,0.08);
+}
+
+.research-visual {
+  height: 100%;
+  min-height: 600px;
+  border-radius: 0;
+}
+
+.research-copy {
+  padding: 54px;
+}
+
+.research-copy h3 {
+  color: var(--deep-forest);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin: 12px 0 20px;
+}
+
+.research-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px;
+  margin-top: 34px;
+}
+
+.research-columns h4 {
+  color: var(--forest);
+  margin-bottom: 12px;
+}
+
+.research-columns ul {
+  color: var(--muted);
+  line-height: 1.75;
+  padding-left: 20px;
+}
+
+.research-note {
+  margin-top: 34px;
+  padding: 22px;
+  background: var(--sand);
+  border-left: 5px solid var(--clay);
+  border-radius: 16px;
+  color: var(--deep-forest);
+  line-height: 1.7;
+}
+
+/* SKILLS */
+
 .skills {
   background: white;
   border-radius: 34px;
@@ -274,6 +349,8 @@ h1 {
   font-weight: 700;
 }
 
+/* CONTACT */
+
 .contact {
   text-align: center;
 }
@@ -288,6 +365,26 @@ footer {
   color: var(--sand);
   text-align: center;
   padding: 32px;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .research-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .research-visual {
+    min-height: 320px;
+  }
+
+  .research-copy {
+    padding: 28px;
+  }
+
+  .research-columns {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 850px) {
@@ -313,5 +410,9 @@ footer {
   .skills,
   .wide-project {
     padding: 28px;
+  }
+
+  .section {
+    padding: 58px 0;
   }
 }
