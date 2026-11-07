@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Cleaning incident records in R, summarizing wildfire patterns over time, and mapping county-level fire frequency and acres burned.">
+<meta name="theme-color" content="#1f3a2d">
+<title>California Wildfire Spatial Analysis | Bailey Rockholt</title>
+<link rel="stylesheet" href="style.css">
+<script src="site.js" defer>
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<nav aria-label="Main navigation">
+<a class="brand" href="index.html">Bailey Rockholt<span>Environmental GIS</span>
+</a>
+<button class="menu-toggle" aria-expanded="false" aria-controls="navigation" hidden>Menu</button>
+<div id="navigation" class="nav-links">
+<a href="index.html">Home</a>
+<a href="index.html#projects">Projects</a>
+<a href="index.html#research">Research & Current Work</a>
+<a href="index.html#about">About</a>
+<a href="index.html#skills">Skills</a>
+<a href="index.html#resume">Résumé</a>
+<a href="index.html#contact">Contact</a>
+</div>
+</nav>
+</header>
+<main id="main">
+<section class="section case-heading">
+<a class="back" href="index.html#projects">← All projects</a>
+<p class="eyebrow">R · ArcGIS Online · 2013–2019</p>
+<h1>California Wildfire Spatial Analysis</h1>
+<p class="lead">Cleaning incident records in R, summarizing wildfire patterns over time, and mapping county-level fire frequency and acres burned.</p>
+<div class="actions">
+<a class="button " href="#evidence">View project evidence <span aria-hidden="true">↗</span>
+</a>
+<a class="button " href="https://arcg.is/1vK0ru3">Open interactive wildfire map <span aria-hidden="true">↗</span>
+</a>
+</div>
+</section>
+<div class="section case-body">
+<div class="case-summary">
+<section>
+<h2>Project purpose</h2>
+<p>Explore the temporal and geographic patterns in California wildfire incidents for 2013–2019 and communicate the results through statistical graphics and a public web map.</p>
+</section>
+<aside>
+<h2>Technical skills</h2>
+<p>R data preparation · Temporal aggregation · County summaries · Attribute joins · Statistical visualization · Web GIS</p>
+</aside>
+</div>
+<section class="source-section" aria-labelledby="source-title"><p class="eyebrow">Programming evidence</p><h2 id="source-title">Explore the R workflow</h2><p>The supplied recovered script checks required fields, cleans text and dates, summarizes temporal and county patterns, exports GIS-ready tables, and builds charts with ggplot2. It also contains an explicitly exploratory time-trend model.</p><div class="actions"><a class="button" href="https://github.com/baileyrockholt/Bailey-Rockholt-GIS-Portfolio/blob/portfolio/environmental-gis-case-studies/code/california_wildfire_gis_portfolio.R">View R source on GitHub ↗</a><a class="button" href="code/california_wildfire_gis_portfolio.R" download>Download R script</a><a class="button" href="code/README.md">Read setup and limitations</a></div><p class="map-help">The raw input CSV was not supplied, so this recovered version has not been rerun here. The original charts remain project evidence; exact reproduction is not claimed. Review multi-county join keys and the missing-fatality assumption before reuse.</p></section>
+<section class="interactive-project" aria-labelledby="interactive-title">
+<p class="eyebrow">Explore the spatial results</p>
+<h2 id="interactive-title">California wildfire map</h2>
+<p>Explore the county-level summaries alongside the charts below. Open the map in ArcGIS Online to use the full map controls and inspect available layers.</p>
+<iframe class="map-embed" title="Bailey Rockholt's California Wildfire Analysis, 2013–2019" src="https://www.arcgis.com/apps/Embed/index.html?webmap=9f0e311728474400ae384e9b4a210f7d&amp;extent=-124.8,32.2,-113.7,42.2&amp;zoom=true&amp;scale=true&amp;legend=true&amp;disable_scroll=true&amp;theme=light" loading="lazy" allowfullscreen></iframe>
+<p class="map-help">If the embedded map is unavailable, <a href="https://arcg.is/1vK0ru3" target="_blank" rel="noopener">open the public map in ArcGIS Online ↗</a>.</p>
+</section>
+<section id="evidence">
+<p class="eyebrow">Original project outputs</p>
+<h2>Analysis & charts</h2>
+<figure class="map-figure">
+<a href="wildfire_year_chart.png" target="_blank" rel="noopener" aria-label="View full-resolution image: Annual wildfire frequency">
+<img src="wildfire_year_chart.png" alt="Annual wildfire frequency" loading="lazy">
+</a>
+<figcaption>Annual summary of incidents in the project dataset. The plotted incident count is highest in 2017 within the 2013–2019 study period. <a href="wildfire_year_chart.png" target="_blank" rel="noopener">Open full resolution ↗</a> · <a href="wildfire_year_chart.png" download>Download image</a>
+</figcaption>
+</figure>
+<figure class="map-figure">
+<a href="wildfire_month_chart.png" target="_blank" rel="noopener" aria-label="View full-resolution image: Monthly wildfire frequency">
+<img src="wildfire_month_chart.png" alt="Monthly wildfire frequency" loading="lazy">
+</a>
+<figcaption>Seasonal distribution summarized by month. July has the highest incident count in the project dataset; summer activity exceeds winter activity. <a href="wildfire_month_chart.png" target="_blank" rel="noopener">Open full resolution ↗</a> · <a href="wildfire_month_chart.png" download>Download image</a>
+</figcaption>
+</figure>
+<figure class="map-figure">
+<a href="wildfire_acres_burned_chart.png" target="_blank" rel="noopener" aria-label="View full-resolution image: Wildfire acres burned chart">
+<img src="wildfire_acres_burned_chart.png" alt="Wildfire acres burned chart" loading="lazy">
+</a>
+<figcaption>Lake County leads the displayed counties in total acres burned. The original chart’s subtitle uses “burn severity”; the actual metric shown is area burned, which does not measure ecological burn severity. The original image is preserved. <a href="wildfire_acres_burned_chart.png" target="_blank" rel="noopener">Open full resolution ↗</a> · <a href="wildfire_acres_burned_chart.png" download>Download image</a>
+</figcaption>
+</figure>
+<figure class="map-figure">
+<a href="wildfire_county_frequency_chart.png" target="_blank" rel="noopener" aria-label="View full-resolution image: County wildfire frequency chart">
+<img src="wildfire_county_frequency_chart.png" alt="County wildfire frequency chart" loading="lazy">
+</a>
+<figcaption>Riverside County leads the displayed counties in incident frequency. Its ranking differs from the acres-burned chart, illustrating why frequency and burned area should be examined separately. <a href="wildfire_county_frequency_chart.png" target="_blank" rel="noopener">Open full resolution ↗</a> · <a href="wildfire_county_frequency_chart.png" download>Download image</a>
+</figcaption>
+</figure>
+</section>
+<div class="case-summary">
+<section>
+<h2>Methodology</h2>
+<ol class="method">
+<li>Cleaned and analyzed California wildfire incident records using R.</li>
+<li>Summarized incidents by year and month, and compared county-level fire frequency and acres burned.</li>
+<li>Produced charts and GIS-ready summaries for use in ArcGIS Online.</li>
+<li>Joined county summaries to county boundaries and configured the interactive map.</li>
+</ol>
+</section>
+<section>
+<h2>Data & documentation</h2>
+<p>Wildfire incident records, county-level summaries, and California county boundaries. The public web map identifies the analysis period as 2013–2019. The recovered R script is available above. The original input dataset and authoritative source citation are still needed to reproduce the analysis.</p>
+</section>
+</div>
+<section class="limits">
+<h2>Interpretation & limitations</h2>
+<p>Fire frequency and acres burned describe different aspects of wildfire activity. County totals should not be interpreted as area-normalized risk, burn severity, or evidence of a causal relationship. The charts summarize the study period rather than current conditions.</p>
+<p>The interactive map is public and owned by Bailey Rockholt. Its layer configuration includes county boundaries, fire frequency, and acres burned.</p>
+<a class="button " href="https://arcg.is/1vK0ru3">Explore the public map <span aria-hidden="true">↗</span>
+</a>
+</section>
+<nav class="project-next" aria-label="Other projects">
+<a class="button " href="lake-tahoe.html">Lake Tahoe Wildfire & Land Cover Analysis <span aria-hidden="true">↗</span>
+</a>
+<a class="button " href="clarkia-habitat.html">Clarkia Flower Habitat & Climate Mapping <span aria-hidden="true">↗</span>
+</a>
+</nav>
+</div>
+</main>
+<footer>
+<a href="index.html">Bailey Rockholt</a>
+<p>Environmental GIS & Spatial Data Analysis</p>
+<p>© 2026 Bailey Rockholt · <a href="https://github.com/baileyrockholt/Bailey-Rockholt-GIS-Portfolio">Website source</a>
+</p>
+</footer>
+</body>
+</html>
