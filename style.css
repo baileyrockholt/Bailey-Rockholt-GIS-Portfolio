@@ -582,3 +582,18 @@ footer p {
 .map-embed { display: block; width: 100%; height: 640px; border: 1px solid #1f3a2d40; background: var(--sage); }
 .map-help { margin-top: 14px; font-size: .9rem; }
 @media (max-width: 700px) { .map-embed { height: 480px; } }
+
+.source-section { padding: 28px 0 40px; border-top: 1px solid #1f3a2d30; }
+.case-summary > * { min-width: 0; }
+.programming-feature { display:flex; align-items:center; gap:32px; border-top:1px solid #dbe4d460; margin-top:32px; padding-top:32px; }
+.programming-feature>div { flex:1; }
+.programming-feature .button { flex-shrink:0; }
+.example-output { margin:40px 0; }
+.table-scroll { overflow-x:auto; margin-bottom:24px; }
+table { width:100%; border-collapse:collapse; background:white; font-size:.95rem; }
+caption { text-align:left; padding-bottom:12px; color:var(--muted); }
+th,td { text-align:left; padding:14px; border:1px solid #1f3a2d30; }
+th { background:var(--sage); }
+pre { padding:18px; background:var(--sand); overflow-x:auto; }
+.record-list p { font-size:.88rem; margin:8px 0 0; }
+@media(max-width:700px) { .programming-feature { display:block; } .programming-feature .button { margin-top:16px; } }

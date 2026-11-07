@@ -20,7 +20,9 @@ Run node check-site.cjs and node --check site.js. Serve this directory using a s
 
 Edit the HTML pages directly. Keep source image names or update their references. Retain documentation limitations until the source data, citations, and analysis details are supplied. Do not infer causal findings, completed research, or publication status from map exports.
 
-The current résumé PDF and original R script were absent from the source repository. The résumé section offers an email request instead of a broken download. Once supplied, add the actual PDF and replace the status text with a download link. Add a project code link only after the genuine R script is available.
+The consolidated environmental GIS résumé is in assets/Bailey_Rockholt_Environmental_GIS_Resume.pdf. Confirmed dates: State Parks August 2026–Present; B.S. December 2022; CMS ended August 2026; USDA remains active. It omits private phone/address information for public portfolio use. The original résumé variants are not committed.
+
+Supplied R and Python scripts are retained in code/ with setup instructions, interpretation limits, and a generated Python example. The R script is a recovered workflow, reviewed but not rerun because its raw CSV and the R runtime were unavailable. The Python tool is a separately labeled exploratory prototype, not an official agency product or validated agronomic model. See crop-suitability.html.
 
 ## Public map verification
 
@@ -33,7 +35,7 @@ Public item availability does not guarantee that every third-party layer will re
 
 ## Validation performed
 
-Four pages and 106 local references passed file/anchor, unique-id, image-alt, viewport, and heading checks. JavaScript syntax and git whitespace checks passed. Desktop homepage and 390px mobile homepage and Tahoe case study were inspected in the browser. Mobile menu expansion and Escape dismissal worked. The full-resolution and download destinations are original image files.
+Five pages and 126 local references passed file/anchor, unique-id, image-alt, viewport, and heading checks. JavaScript syntax and git whitespace checks passed. Desktop homepage and 390px mobile homepage and Tahoe case study were inspected in the browser. Mobile menu expansion and Escape dismissal worked. The full-resolution and download destinations are original image files.
 
 ## Review and deployment
 
@@ -45,4 +47,8 @@ GitHub installation access is now verified. The development branch and pull requ
 
 The wildfire page includes the verified public ArcGIS map in a responsive frame with a direct-link fallback. Original chart captions now explain the visible annual/monthly peaks and county rankings, and correct the distinction between acres burned and ecological burn severity. Tahoe and Clarkia workflow captions describe the visible layer/symbology evidence and identify remaining source-data questions.
 
-The ArcGIS embed endpoint and public map metadata returned HTTP 200. The latest local browser preview timed out, so rendering and interaction of the new third-party embed remain unverified. Earlier desktop and mobile layout checks covered the base website. Static link and syntax checks still pass.
+The ArcGIS embedded wildfire map now renders in the local browser with map attribution and zoom controls visible. Desktop and 390px mobile views were checked, including the new Python project page; a mobile grid-overflow issue was corrected and the page width now fits the viewport. The résumé returns HTTP 200 as application/pdf. Static link, syntax, and Python prototype checks pass. The two-page résumé PDF was rendered and both pages visually inspected.
+
+## Preview review
+
+A complete offline preview ZIP accompanies this revision. Extract it and open index.html. Maps require internet access; the rest of the site and résumé work locally. Do not merge or deploy until Bailey has reviewed the preview.

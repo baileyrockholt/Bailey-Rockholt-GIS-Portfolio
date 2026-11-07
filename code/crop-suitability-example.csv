@@ -1,0 +1,16 @@
+Rank,Crop,Illustrative score 0-100,Classification,Limiting factor,Water demand
+1,Almonds,95.9,Excellent,Elevation,High
+2,Olives,94.8,Excellent,Elevation,Low to moderate
+3,Wine Grapes,92.7,Excellent,Elevation,Low to moderate
+4,Processing Tomatoes,92.3,Excellent,Elevation,Moderate to high
+5,Carrots,91.4,Excellent,Elevation,Moderate
+6,Lemons,91.4,Excellent,Elevation,High
+7,Avocados,90.9,Excellent,Elevation,High
+8,Oranges,90.7,Excellent,Elevation,High
+9,Lettuce,88.8,Good,Elevation,Moderate
+10,Broccoli,88.0,Good,Elevation,Moderate
+11,Strawberries,87.7,Good,Elevation,Moderate to high
+12,Pistachios,86.6,Good,Elevation,Moderate to high
+13,Rice,86.6,Good,Temperature,Very high
+14,Alfalfa,85.2,Good,Soil pH,Very high
+15,Cotton,74.0,Moderate,Temperature,Moderate to high
