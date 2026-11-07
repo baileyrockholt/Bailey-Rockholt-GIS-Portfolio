@@ -39,4 +39,10 @@ Four pages and 106 local references passed file/anchor, unique-id, image-alt, vi
 
 Based on main commit 4c952d2. Local development branch: portfolio/environmental-gis-case-studies. Do not merge or deploy to main without Bailey's approval.
 
-The ChatGPT Codex Connector installation now includes this repository. Branch creation was verified after installation. Changes are prepared on the development branch for pull request review; merging and publication require Bailey's approval.
+GitHub installation access is now verified. The development branch and pull request #1 are available for review. Do not merge or deploy without Bailey's approval.
+
+## Case study refinements
+
+The wildfire page includes the verified public ArcGIS map in a responsive frame with a direct-link fallback. Original chart captions now explain the visible annual/monthly peaks and county rankings, and correct the distinction between acres burned and ecological burn severity. Tahoe and Clarkia workflow captions describe the visible layer/symbology evidence and identify remaining source-data questions.
+
+The ArcGIS embed endpoint and public map metadata returned HTTP 200. The latest local browser preview timed out, so rendering and interaction of the new third-party embed remain unverified. Earlier desktop and mobile layout checks covered the base website. Static link and syntax checks still pass.
